@@ -2,4 +2,6 @@
 <!--Mathew Anderson, n01436706 -->
 <resources>
     <string name="app_name">MathewLab8</string>
+    <string name="open_nav">Ouvrir le tiroir de navigation</string>
+    <string name="close_nav">Fermer le tiroir de navigation</string>
 </resources>
