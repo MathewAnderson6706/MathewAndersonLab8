@@ -4,4 +4,11 @@
     <string name="app_name">MathewLab8</string>
     <string name="open_nav">Ouvrir le tiroir de navigation</string>
     <string name="close_nav">Fermer le tiroir de navigation</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="name">Mathew Anderson</string>
+    <string name="email">n01436706@humber.ca</string>
 </resources>
