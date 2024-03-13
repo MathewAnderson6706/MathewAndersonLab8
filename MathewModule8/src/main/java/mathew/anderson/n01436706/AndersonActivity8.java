@@ -97,7 +97,7 @@ public class AndersonActivity8 extends AppCompatActivity implements NavigationVi
         } else if (item.getItemId() == R.id.nav_about) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
         } else if (item.getItemId() == R.id.nav_logout) {
-            Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
+            displayAlertDialog();
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
