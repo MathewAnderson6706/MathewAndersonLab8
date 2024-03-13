@@ -29,4 +29,7 @@
     <string name="invalid_email">Invalid email</string>
     <string name="firstname">Mathew</string>
     <string name="lastname">Anderson</string>
+    <string name="ischecked">isChecked?</string>
+    <string name="iftrue">True</string>
+    <string name="iffalse">False</string>
 </resources>

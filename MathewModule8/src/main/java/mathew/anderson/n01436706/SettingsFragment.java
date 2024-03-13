@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import mathew.anderson.n01436706.databinding.ActivityMainBinding;
+//import mathew.anderson.n01436706.databinding.ActivityMainBinding;
 
 public class SettingsFragment extends Fragment {
 
@@ -29,7 +29,7 @@ public class SettingsFragment extends Fragment {
     private ImageView imageView;
     private Button button;
     ActivityResultLauncher<Intent> imageLauncher;
-    ActivityMainBinding mainBinding;
+    //ActivityMainBinding mainBinding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
