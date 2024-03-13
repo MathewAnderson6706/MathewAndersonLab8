@@ -1,3 +1,4 @@
+// Mathew Anderson, n01436706
 package mathew.anderson.n01436706;
 
 import android.content.Context;
@@ -6,8 +7,6 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.os.Handler;
-import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +35,7 @@ public class ShareFragment extends Fragment {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CheckBox checkBox = view.findViewById(R.id.checkBox);
+                CheckBox checkBox = view.findViewById(R.id.matCheckBox);
                 EditText emailEditText = view.findViewById(R.id.matEditEmail);
                 EditText idEditText = view.findViewById(R.id.matEditID);
 

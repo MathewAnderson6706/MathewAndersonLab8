@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/matButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/mathewTextView" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/matImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="169dp"
@@ -42,6 +42,6 @@
         app:layout_constraintHeight_percent="0.25"
         app:layout_constraintWidth_percent="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/matButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

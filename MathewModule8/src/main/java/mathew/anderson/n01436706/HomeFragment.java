@@ -1,3 +1,4 @@
+// Mathew Anderson, n01436706
 package mathew.anderson.n01436706;
 
 import android.os.Bundle;
@@ -29,8 +30,8 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        imageView = view.findViewById(R.id.imageView);
-        button = view.findViewById(R.id.button);
+        imageView = view.findViewById(R.id.matImageView);
+        button = view.findViewById(R.id.matButton);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
