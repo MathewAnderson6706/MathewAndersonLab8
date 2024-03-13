@@ -23,7 +23,6 @@ public class AboutFragment extends Fragment {
 
     private int counter = 0;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -75,4 +74,5 @@ public class AboutFragment extends Fragment {
         String message = getString(R.string.name) + " " + counter;
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show();
     }
+
 }
