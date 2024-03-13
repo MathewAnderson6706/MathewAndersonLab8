@@ -18,4 +18,12 @@
     <string name="nameid">Mathew Anderson n01436706</string>
     <string name="button">Button</string>
     <string name="access_photos">Access Photos</string>
+    <string name="profile">Profile</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="profileemail">Email:</string>
+    <string name="id">id:</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_id">Enter ID</string>
+    <string name="id_must_be_at_least_6_digits">ID must be at least 6 digits</string>
+    <string name="invalid_email">Invalid email</string>
 </resources>
