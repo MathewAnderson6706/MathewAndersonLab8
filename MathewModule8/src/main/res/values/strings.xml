@@ -27,4 +27,6 @@
     <string name="enter_id">Enter ID</string>
     <string name="id_must_be_at_least_6_digits">ID must be at least 6 digits</string>
     <string name="invalid_email">Invalid email</string>
+    <string name="firstname">Mathew</string>
+    <string name="lastname">Anderson</string>
 </resources>
