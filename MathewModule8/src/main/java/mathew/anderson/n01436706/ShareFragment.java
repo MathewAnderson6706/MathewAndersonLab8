@@ -6,6 +6,8 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
 
 public class ShareFragment extends Fragment {
 
@@ -66,6 +72,23 @@ public class ShareFragment extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        displayCurrentTime();
+    }
+
+    private void displayCurrentTime() {
+        // Get current time in GMT
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
+        String currentTime = sdf.format(new Date());
+
+        // Display toast message with current time in GMT
+        String message = getString(R.string.name) + " " + currentTime;
+        Toast.makeText(requireContext(), message, Toast.LENGTH_LONG).show();
     }
 
     private boolean isValidEmail(String email) {

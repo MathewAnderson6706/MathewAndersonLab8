@@ -5,6 +5,7 @@
     <string name="open_nav">Ouvrir le tiroir de navigation</string>
     <string name="close_nav">Fermer le tiroir de navigation</string>
     <string name="home">Home</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="settings">Settings</string>
     <string name="share">Share</string>
     <string name="about_us">About Us</string>
