@@ -4,10 +4,13 @@ package mathew.anderson.n01436706;
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -40,11 +43,48 @@ public class AndersonActivity8 extends AppCompatActivity implements NavigationVi
                 if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                     drawerLayout.closeDrawer(GravityCompat.START);
                 } else {
-                    moveTaskToBack(true);
+                    displayAlertDialog();
                 }
             }
         };
         getOnBackPressedDispatcher().addCallback(this, callback);
+    }
+
+    public void displayAlertDialog(){
+
+        // 1. Instantiate an AlertDialog.Builder with its constructor.
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        // Add the buttons.
+        builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User taps OK button.
+                finish();
+            }
+        });
+        builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User cancels the dialog.
+                dialog.dismiss();
+            }
+        });
+
+        builder.setIcon(R.drawable.baseline_home_24);
+
+// 2. Chain together various setter methods to set the dialog characteristics.
+
+        builder.setMessage(R.string.dialog_message)
+                .setTitle(R.string.dialog_title);
+        //android.R.drawable.ic_dialog_alert
+
+
+        builder.setCancelable(false);
+
+// 3. Get the AlertDialog.
+        AlertDialog dialog = builder.create();
+
+        dialog.show();
+
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

@@ -11,4 +11,8 @@
     <string name="logout">Logout</string>
     <string name="name">Mathew Anderson</string>
     <string name="email">n01436706@humber.ca</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="dialog_message">Do you want to exit the app?</string>
+    <string name="dialog_title">Mathew Anderson</string>
 </resources>
