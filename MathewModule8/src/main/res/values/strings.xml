@@ -16,4 +16,6 @@
     <string name="no">no</string>
     <string name="dialog_message">Do you want to exit the app?</string>
     <string name="dialog_title">Mathew Anderson</string>
+    <string name="nameid">Mathew Anderson n01436706</string>
+    <string name="button">Button</string>
 </resources>
